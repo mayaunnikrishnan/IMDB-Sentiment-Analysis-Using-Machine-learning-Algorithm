@@ -29,7 +29,7 @@ def lemmatize_tokens(tokens):
     lemmatized_tokens = [word.lemma_ for word in tokens]
     return lemmatized_tokens
 
-def load_model_and_vectorizer(model_path='logistic_regression_model.pkl', vectorizer_path='tfidf_vectorizer.pkl', encoder_path='label_encoder.pkl'):
+def load_model_and_vectorizer(model_path='sentiment_app/logistic_regression_model.pkl', vectorizer_path='sentiment_app/tfidf_vectorizer.pkl', encoder_path='sentiment_app/label_encoder.pkl'):
     model = joblib.load(model_path)
     vectorizer = joblib.load(vectorizer_path)
     label_encoder = joblib.load(encoder_path)
